@@ -1,0 +1,1227 @@
+{
+  "HAEMATOLOGY": {
+    "name": "HAEMATOLOGY",
+    "sub_category": [
+      {
+        "name": "CBC",
+        "data": [
+          {
+            "id": 0,
+            "name": "WBC",
+            "type": "range",
+            "range": {
+              "lower": "4000",
+              "higher": "11000"
+            },
+            "unit": "cells/mm³"
+          },
+          {
+            "id": 1,
+            "name": "RBC",
+            "type": "range",
+            "auto_fill": "{2}/3",
+            "range": {
+              "lower": "4",
+              "higher": "5"
+            },
+            "unit": "Million/mm³"
+          },
+          {
+            "id": 2,
+            "name": "Haemoglobin",
+            "type": "range",
+            "range": {
+              "M": {
+                "lower": "13",
+                "higher": "18"
+              },
+              "F": {
+                "lower": "12",
+                "higher": "16"
+              }
+            },
+            "unit": "%"
+          }
+        ]
+      },
+      {
+        "name": "WBC Differential Count",
+        "data": [
+          {
+            "id": 3,
+            "name": "Neutrophils",
+            "type": "range",
+            "range": {
+              "lower": "40",
+              "higher": "70"
+            },
+            "unit": "%"
+          },
+          {
+            "id": 4,
+            "name": "Lymhocytes",
+            "type": "range",
+            "range": {
+              "lower": "20",
+              "higher": "45"
+            },
+            "unit": "%"
+          },
+          {
+            "id": 5,
+            "name": "Eosinophils",
+            "type": "range",
+            "range": {
+              "lower": "1",
+              "higher": "5"
+            },
+            "unit": "%"
+          },
+          {
+            "id": 6,
+            "name": "Monocytes",
+            "type": "range",
+            "range": {
+              "lower": "2",
+              "higher": "8"
+            },
+            "unit": "%"
+          },
+          {
+            "id": 7,
+            "name": "Basophils",
+            "type": "range",
+            "range": {
+              "lower": "0",
+              "higher": "2"
+            },
+            "unit": "%"
+          },
+          {
+            "id": 8,
+            "name": "Platelets",
+            "type": "range",
+            "range": {
+              "lower": "150000",
+              "higher": "450000"
+            },
+            "unit": "/mm³"
+          },
+          {
+            "id": 9,
+            "name": "PCV",
+            "type": "range",
+            "auto_fill": "{2}*3",
+            "range": {
+              "M": {
+                "lower": "40",
+                "higher": "45"
+              },
+              "F": {
+                "lower": "36",
+                "higher": "47"
+              }
+            },
+            "unit": "%"
+          },
+          {
+            "id": 10,
+            "name": "MCV(fL)",
+            "type": "range",
+            "auto_fill": "{9}*9/{1}",
+            "range": {
+              "lower": "82",
+              "higher": "92"
+            },
+            "unit": "fL"
+          },
+          {
+            "id": 11,
+            "name": "MCH(pg)",
+            "type": "range",
+            "auto_fill": "{2}*10/{1}",
+            "range": {
+              "lower": "27",
+              "higher": "32"
+            },
+            "unit": "pg"
+          },
+          {
+            "id": 12,
+            "name": "MCHC(mg%)",
+            "type": "range",
+            "auto_fill": "{2}*100/{9}",
+            "range": {
+              "lower": "32",
+              "higher": "36"
+            },
+            "unit": "mg%"
+          },
+          {
+            "id": 13,
+            "name": "A.E.C",
+            "type": "range",
+            "range": {
+              "lower": "40",
+              "higher": "440"
+            },
+            "unit": "/mm³"
+          },
+          {
+            "id": 14,
+            "name": "ESR wintrobe",
+            "type": "range",
+            "range": {
+              "lower": "0",
+              "higher": "15"
+            },
+            "unit": "mm/hr"
+          },
+          {
+            "id": 15,
+            "name": "Malaria Parasite",
+            "type": "free"
+          },
+          {
+            "id": 16,
+            "name": "Bleeding Time",
+            "type": "range",
+            "range": {
+              "lower": 1,
+              "higher": 6
+            },
+            "unit": "minutes"
+          },
+          {
+            "id": 17,
+            "name": "Clotting Time",
+            "type": "free"
+          },
+          {
+            "id": 18,
+            "name": "Blood group",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "A-",
+              "A+",
+              "B+",
+              "B-",
+              "AB-",
+              "AB+",
+              "O-",
+              "O+"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "MANTOUX_TEST": {
+    "name": "MANTOUX TEST",
+    "data": [
+      {
+        "id": 0,
+        "name": "PPD Given By",
+        "type": "free"
+      },
+      {
+        "id": 1,
+        "name": "Reading On",
+        "type": "free"
+      },
+      {
+        "id": 2,
+        "name": "Method",
+        "type": "free"
+      },
+      {
+        "id": 3,
+        "name": "Result",
+        "type": "radio",
+        "values": [
+          "Not selected",
+          "Positive",
+          "Negative"
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Observation",
+        "type": "free"
+      }
+    ]
+  },
+  "SEROLOGY": {
+    "name": "SEROLOGY",
+    "data": [
+      {
+        "id": 0,
+        "name": "ASO Titre",
+        "type": "free",
+        "unit": "IU/ml"
+      },
+      {
+        "id": 1,
+        "name": "Prothrombin Time(PT)",
+        "type": "free"
+      },
+      {
+        "id": 2,
+        "name": "INR",
+        "type": "free"
+      },
+      {
+        "id": 3,
+        "name": "C.R.P",
+        "type": "free"
+      },
+      {
+        "id": 4,
+        "name": "VDRL",
+        "type": "radio",
+        "values": [
+          "Not selected",
+          "Positive",
+          "Negative"
+        ]
+      },
+      {
+        "id": 5,
+        "name": "S. Aldehyde Test",
+        "type": "radio",
+        "values": [
+          "Not selected",
+          "Positive",
+          "Negative"
+        ]
+      },
+      {
+        "id": 6,
+        "name": "HIV Test",
+        "type": "radio",
+        "values": [
+          "Not selected",
+          "Positive",
+          "Negative"
+        ]
+      },
+      {
+        "id": 7,
+        "name": "HbsAg",
+        "type": "radio",
+        "values": [
+          "Not selected",
+          "Positive",
+          "Negative"
+        ]
+      },
+      {
+        "id": 8,
+        "name": "Rheumatoid(RA) Factor",
+        "type": "radio",
+        "values": [
+          "Not selected",
+          "Positive",
+          "Negative"
+        ]
+      },
+      {
+        "id": 9,
+        "name": "K 39",
+        "type": "radio",
+        "values": [
+          "Not selected",
+          "Positive",
+          "Negative"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "Dengue NSI Ag",
+        "type": "radio",
+        "values": [
+          "Not selected",
+          "Positive",
+          "Negative"
+        ]
+      },
+      {
+        "id": 11,
+        "name": "Dengue IgG",
+        "type": "radio",
+        "values": [
+          "Not selected",
+          "Positive",
+          "Negative"
+        ]
+      },
+      {
+        "id": 12,
+        "name": "Dengue IgM",
+        "type": "radio",
+        "values": [
+          "Not selected",
+          "Positive",
+          "Negative"
+        ]
+      },
+      {
+        "id": 13,
+        "name": "Typhoid IgG",
+        "type": "radio",
+        "values": [
+          "Not selected",
+          "Positive",
+          "Negative"
+        ]
+      },
+      {
+        "id": 14,
+        "name": "Typhoid IgM",
+        "type": "radio",
+        "values": [
+          "Not selected",
+          "Positive",
+          "Negative"
+        ]
+      },
+      {
+        "id": 15,
+        "name": "Typhoid dots",
+        "type": "free"
+      }
+    ]
+  },
+  "BIOCHEMISTRY": {
+    "name": "BIOCHEMISTRY",
+    "data": [
+      {
+        "id": 0,
+        "name": "Blood Sugar F.",
+        "type": "range",
+        "range": {
+          "lower": "70",
+          "higher": "110"
+        },
+        "unit": "mg%"
+      },
+      {
+        "id": 1,
+        "name": "Blood Sugar PP.",
+        "type": "range",
+        "range": {
+          "lower": "70",
+          "higher": "140"
+        },
+        "unit": "mg%"
+      },
+      {
+        "id": 2,
+        "name": "Blood Sugar R.",
+        "type": "range",
+        "range": {
+          "lower": "70",
+          "higher": "140"
+        },
+        "unit": "mg%"
+      },
+      {
+        "id": 3,
+        "name": "Blood Urea",
+        "type": "range",
+        "range": {
+          "lower": "15",
+          "higher": "40"
+        },
+        "unit": "mg%"
+      },
+      {
+        "id": 4,
+        "name": "S. Creatinine",
+        "type": "range",
+        "range": {
+          "lower": "0.4",
+          "higher": "1.4"
+        },
+        "unit": "mg%"
+      },
+      {
+        "id": 5,
+        "name": "S. Uric Acid",
+        "type": "range",
+        "range": {
+          "lower": "2",
+          "higher": "7"
+        },
+        "unit": "mg%"
+      },
+      {
+        "id": 6,
+        "name": "S. Amylase",
+        "type": "range",
+        "range": {
+          "lower": "20",
+          "higher": "220"
+        },
+        "unit": "U/L"
+      },
+      {
+        "id": 7,
+        "name": "Calcium",
+        "type": "range",
+        "range": {
+          "lower": "8.7",
+          "higher": "11"
+        },
+        "unit": "mmol/L"
+      },
+      {
+        "id": 8,
+        "name": "Sodium(Na)",
+        "type": "range",
+        "range": {
+          "lower": "135",
+          "higher": "145"
+        },
+        "unit": "mmol/L"
+      },
+      {
+        "id": 9,
+        "name": "Potassium(K)",
+        "type": "range",
+        "range": {
+          "lower": "3.5",
+          "higher": "5.5"
+        },
+        "unit": "mmol/L"
+      }
+    ]
+  },
+  "LIVER_FUNCTION_TEST": {
+    "name": "LIVER FUNCTION TEST",
+    "data": [
+      {
+        "id": 0,
+        "name": "Sr. Bilirubin Total",
+        "type": "range",
+        "range": {
+          "lower": "0.4",
+          "higher": "1.2"
+        },
+        "unit": "mg%"
+      },
+      {
+        "id": 1,
+        "name": "Sr. Bilirubin Direct",
+        "type": "range",
+        "range": {
+          "lower": "0",
+          "higher": "0.4"
+        },
+        "unit": "mg%"
+      },
+      {
+        "id": 2,
+        "name": "Alk. Phosphatase",
+        "type": "range",
+        "range": {
+          "lower": "80",
+          "higher": "306"
+        },
+        "unit": "U/L"
+      },
+      {
+        "id": 3,
+        "name": "S.G.P.T",
+        "type": "range",
+        "range": {
+          "lower": "0",
+          "higher": "40"
+        },
+        "unit": "U/L"
+      },
+      {
+        "id": 4,
+        "name": "S.G.O.T",
+        "type": "range",
+        "range": {
+          "lower": "0",
+          "higher": "41"
+        },
+        "unit": "U/L"
+      },
+      {
+        "id": 5,
+        "name": "S. Albumin",
+        "type": "range",
+        "range": {
+          "lower": "3.5",
+          "higher": "5"
+        },
+        "unit": "gm%"
+      },
+      {
+        "id": 6,
+        "name": "Total Protein",
+        "type": "range",
+        "range": {
+          "lower": "6",
+          "higher": "8"
+        },
+        "unit": "gm%"
+      }
+    ]
+  },
+  "RENAL_FUNCTION_TEST": {
+    "name": "RENAL FUNCTION TEST",
+    "data": [
+      {
+        "id": 0,
+        "name": "Blood Urea",
+        "type": "range",
+        "range": {
+          "lower": "15",
+          "higher": "40"
+        },
+        "unit": "mg%"
+      },
+      {
+        "id": 1,
+        "name": "S. Creatinine",
+        "type": "range",
+        "range": {
+          "lower": "0.4",
+          "higher": "1.4"
+        },
+        "unit": "mg%"
+      },
+      {
+        "id": 2,
+        "name": "S. Uric Acid",
+        "type": "range",
+        "range": {
+          "lower": "2",
+          "higher": "7"
+        },
+        "unit": "mg%"
+      },
+      {
+        "id": 3,
+        "name": "Albumin",
+        "type": "range",
+        "range": {
+          "lower": "3.5",
+          "higher": "5"
+        },
+        "unit": "gm%"
+      },
+      {
+        "id": 4,
+        "name": "Sodium(Na)",
+        "type": "range",
+        "range": {
+          "lower": "135",
+          "higher": "145"
+        },
+        "unit": "mmol/L"
+      },
+      {
+        "id": 5,
+        "name": "Potassium(K)",
+        "type": "range",
+        "range": {
+          "lower": "3.5",
+          "higher": "5.5"
+        },
+        "unit": "mmol/L"
+      }
+    ]
+  },
+  "LIPID_PROFILE": {
+    "name": "LIPID PROFILE",
+    "data": [
+      {
+        "id": 0,
+        "name": "Total Cholesterol",
+        "type": "range",
+        "range": {
+          "higher": "200"
+        },
+        "unit": "mg%"
+      },
+      {
+        "id": 1,
+        "name": "Triglycride",
+        "type": "range",
+        "range": {
+          "higher": "150"
+        },
+        "unit": "mg%"
+      },
+      {
+        "id": 2,
+        "name": "HDL Cholesterol",
+        "type": "range",
+        "range": {
+          "higher": "55"
+        },
+        "unit": "mg%"
+      },
+      {
+        "id": 3,
+        "name": "LDL Cholesterol",
+        "type": "range",
+        "range": {
+          "higher": "130"
+        },
+        "unit": "mg%"
+      }
+    ]
+  },
+  "URINE_EXAMINATION_TEST": {
+    "name": "URINE EXAMINATION TEST",
+    "sub_category": [
+      {
+        "name": "Physical Exam",
+        "data": [
+          {
+            "id": 0,
+            "name": "Quantity",
+            "type": "free",
+            "unit": "ml"
+          },
+          {
+            "id": 1,
+            "name": "Colour",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Pale Yellow",
+              "Straw",
+              "Light Yellow",
+              "Reddish"
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Transparency",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Turbid",
+              "Slightly Turbid",
+              "Clear"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chemical Exam",
+        "data": [
+          {
+            "id": 12,
+            "name": "Reaction",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Alkaline",
+              "Acidic"
+            ]
+          },
+          {
+            "id": 13,
+            "name": "Albumin",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Nil",
+              "Trace",
+              "Slighty Trace",
+              "(+)",
+              "(++)",
+              "(+++)",
+              "(++++)"
+            ]
+          },
+          {
+            "id": 14,
+            "name": "Sugar",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Nil",
+              "Trace",
+              "Slighty Trace",
+              "(+)",
+              "(++)",
+              "(+++)",
+              "(++++)"
+            ]
+          },
+          {
+            "id": 15,
+            "name": "Bile Salt",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Positive",
+              "Negative"
+            ]
+          },
+          {
+            "id": 16,
+            "name": "Acetone",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Positive",
+              "Negative"
+            ]
+          },
+          {
+            "id": 17,
+            "name": "Bile pigments",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Positive",
+              "Negative"
+            ]
+          },
+          {
+            "id": 18,
+            "name": "Urobilinogen",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Positive",
+              "Negative"
+            ]
+          },
+          {
+            "id": 19,
+            "name": "Bilirubin",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Positive",
+              "Negative"
+            ]
+          },
+          {
+            "id": 20,
+            "name": "Urine for Pregnancy Test",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Positive",
+              "Negative"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Microscope Exam",
+        "data": [
+          {
+            "id": 3,
+            "name": "Pus cell",
+            "type": "free",
+            "unit": "/hpf"
+          },
+          {
+            "id": 4,
+            "name": "RBC",
+            "type": "free",
+            "unit": "/hpf"
+          },
+          {
+            "id": 5,
+            "name": "Epithelial Cell",
+            "type": "free",
+            "unit": "/hpf"
+          },
+          {
+            "id": 6,
+            "name": "Urates",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Nil",
+              "(+)",
+              "(++)"
+            ],
+            "unit": "/hpf"
+          },
+          {
+            "id": 7,
+            "name": "Casts",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Nil",
+              "(+)",
+              "(++)"
+            ],
+            "unit": "/hpf"
+          },
+          {
+            "id": 8,
+            "name": "Ca.oxalate",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Nil",
+              "(+)",
+              "(++)"
+            ],
+            "unit": "/hpf"
+          },
+          {
+            "id": 9,
+            "name": "Crystals",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Nil",
+              "(+)",
+              "(++)"
+            ],
+            "unit": "/hpf"
+          },
+          {
+            "id": 10,
+            "name": "Amorphous",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Nil",
+              "(+)",
+              "(++)"
+            ],
+            "unit": "/hpf"
+          },
+          {
+            "id": 11,
+            "name": "Bacteria",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Nil",
+              "(+)",
+              "(++)",
+              "(+++)"
+            ],
+            "unit": "/hpf"
+          }
+        ]
+      }
+    ]
+  },
+  "STOOL_EXAMINATION_TEST": {
+    "name": "STOOL EXAMINATION TEST",
+    "sub_category": [
+      {
+        "name": "Physical Exam",
+        "data": [
+          {
+            "id": 0,
+            "name": "Consistancy",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Soft",
+              "Loose",
+              "AB"
+            ]
+          },
+          {
+            "id": 1,
+            "name": "Color",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Yellowish",
+              "Brownish",
+              "Greenish"
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Blood",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Not Present",
+              "(+) present",
+              "(++) present"
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Mucus",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Not Present",
+              "(+) present",
+              "(++) present"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Chemical Exam",
+        "data": [
+          {
+            "id": 11,
+            "name": "Reaction",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Alkaline",
+              "Acidic"
+            ]
+          },
+          {
+            "id": 12,
+            "name": "Ocult Blood",
+            "type": "free"
+          },
+          {
+            "id": 13,
+            "name": "R.S",
+            "type": "free"
+          }
+        ]
+      },
+      {
+        "name": "Microscope Exam",
+        "data": [
+          {
+            "id": 4,
+            "name": "Protozoal Parasite Cyst of",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Not seen",
+              "G.L. seen",
+              "E.H seen"
+            ]
+          },
+          {
+            "id": 5,
+            "name": "Helminethis Parasite Ovat of",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Not seen",
+              "R. Worm seen"
+            ]
+          },
+          {
+            "id": 6,
+            "name": "RBC",
+            "type": "free",
+            "unit": "/hpf"
+          },
+          {
+            "id": 7,
+            "name": "Pus Cell",
+            "type": "free",
+            "unit": "/hpf"
+          },
+          {
+            "id": 8,
+            "name": "Undigested Food particles",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Not Present",
+              "(+) present",
+              "(++) present",
+              "(+++) present"
+            ]
+          },
+          {
+            "id": 9,
+            "name": "Fat Droplets",
+            "type": "radio",
+            "values": [
+              "Not selected",
+              "Not Present",
+              "(+) present",
+              "(++) present",
+              "(+++) present"
+            ]
+          },
+          {
+            "id": 10,
+            "name": "Bacteria",
+            "type": "free"
+          }
+        ]
+      }
+    ]
+  },
+  "BACTERIOLOGY": {
+    "name": "BACTERIOLOGY",
+    "data": [
+      {
+        "id": 0,
+        "name": "After",
+        "type": "free",
+        "unit": "Hrs/incubation at 37ºC"
+      },
+      {
+        "id": 1,
+        "name": "Ampiciline",
+        "type": "free",
+        "unit": "Sen/Res"
+      },
+      {
+        "id": 2,
+        "name": "Tetracycline",
+        "type": "free",
+        "unit": "Sen/Res"
+      },
+      {
+        "id": 3,
+        "name": "Cephalexin",
+        "type": "free",
+        "unit": "Sen/Res"
+      },
+      {
+        "id": 4,
+        "name": "Nalidixic",
+        "type": "free",
+        "unit": "Sen/Res"
+      },
+      {
+        "id": 5,
+        "name": "Gentamycine",
+        "type": "free",
+        "unit": "Sen/Res"
+      },
+      {
+        "id": 6,
+        "name": "Cotrimoxazole",
+        "type": "free",
+        "unit": "Sen/Res"
+      },
+      {
+        "id": 7,
+        "name": "Chloramphenicol",
+        "type": "free",
+        "unit": "Sen/Res"
+      },
+      {
+        "id": 8,
+        "name": "Norfloxacin",
+        "type": "free",
+        "unit": "Sen/Res"
+      },
+      {
+        "id": 9,
+        "name": "Cloxacillin",
+        "type": "free",
+        "unit": "Sen/Res"
+      },
+      {
+        "id": 10,
+        "name": "Erythromycin",
+        "type": "free",
+        "unit": "Sen/Res"
+      },
+      {
+        "id": 11,
+        "name": "Ciprofloxacin",
+        "type": "free",
+        "unit": "Sen/Res"
+      },
+      {
+        "id": 12,
+        "name": "Cefotaxime",
+        "type": "free",
+        "unit": "Sen/Res"
+      },
+      {
+        "id": 13,
+        "name": "Ofloxacin",
+        "type": "free",
+        "unit": "Sen/Res"
+      },
+      {
+        "id": 14,
+        "name": "Amoxycillin",
+        "type": "free",
+        "unit": "Sen/Res"
+      },
+      {
+        "id": 15,
+        "name": "Cephadroxyl",
+        "type": "free",
+        "unit": "Sen/Res"
+      },
+      {
+        "id": 16,
+        "name": "Cefotaxime",
+        "type": "free",
+        "unit": "Sen/Res"
+      }
+    ]
+  },
+  "WIDAL": {
+    "name": "WIDAL",
+    "findings_column": [
+      "1:20",
+      "1:40",
+      "1:80",
+      "1:160",
+      "1:360"
+    ],
+    "data": [
+      {
+        "id": 0,
+        "name": "S. Typhi ('O')",
+        "type": "radio",
+        "values": [
+          "Not selected",
+          "+",
+          "-"
+        ]
+      },
+      {
+        "id": 1,
+        "name": "S. Typhi ('H')",
+        "type": "radio",
+        "values": [
+          "Not selected",
+          "+",
+          "-"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "S. Para Typhi ('AH')",
+        "type": "radio",
+        "values": [
+          "Not selected",
+          "+",
+          "-"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "S. Para Typhi ('BH')",
+        "type": "radio",
+        "values": [
+          "Not selected",
+          "+",
+          "-"
+        ]
+      }
+    ]
+  }
+}
